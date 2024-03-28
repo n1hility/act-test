@@ -21,10 +21,11 @@ jobs:
   greet:
     # The type of runner that the job will run on
     runs-on: windows-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+    - uses: actions/checkout@v3
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v3
     # Runs a single command using the runners shell
     - name: Send greeting
       run: |
-        Get-ChildItem candle.exe -Recurse -Path C:\
+        Get-ChildItem candle.exe -Recurse -Path "C:\Program Files"
