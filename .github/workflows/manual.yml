@@ -25,7 +25,3 @@ jobs:
     - uses: actions/checkout@v3
     - name: Setup tmate session
       uses: mxschmitt/action-tmate@v3
-    # Runs a single command using the runners shell
-    - name: Send greeting
-      run: |
-        Get-ChildItem candle.exe -Recurse -Path "C:\Program Files"
