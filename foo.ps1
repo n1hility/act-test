@@ -17,7 +17,7 @@ function CheckRequirements() {
     CheckCommand "candle" "WiX Toolset"
     CheckCommand "go" "Golang"
 }
-
+#test
 
 # Pre-set to standard locations in-case build env does not refresh paths
 $Env:Path="$Env:Path;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\ProgramData\chocolatey\lib\mingw\tools\install\mingw64\bin;;C:\Program Files\Go\bin"
